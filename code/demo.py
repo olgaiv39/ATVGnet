@@ -46,11 +46,11 @@ def parse_args():
                     type=str,
                     default="../results")
                     # default='/media/lele/DATA/lrw/data2/sample/lstm_gan')test
-    parser.add_argument('-i','--in_file', type=str, default='../audio/test.wav')
+    parser.add_argument('-i','--in_file', type=str, default='../audio/audio_sample.wav')
     parser.add_argument('-d','--data_path', type=str, default='../basics')
-    parser.add_argument('-p','--person', type=str, default='../image/musk1.jpg')
-    parser.add_argument('--device_ids', type=str, default='2')
-    parser.add_argument('--num_thread', type=int, default=1)   
+    parser.add_argument('-p','--person', type=str, default='../image/Eddie_Kaye_Thomas_00227.jpg')
+    parser.add_argument('--device_ids', type=str, default='0')
+    parser.add_argument('--num_thread', type=int, default=8)   
     return parser.parse_args()
 config = parse_args()
 
